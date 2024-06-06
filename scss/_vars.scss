@@ -7,6 +7,7 @@
 //====================================================
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 @font-face {
 	font-family: 'DIN Condensed Bold';
 	src: url('../fonts/DINCondensed-Bold.eot');
@@ -20,7 +21,8 @@
 	font-display: swap;
 }
 
-$font-base: "Hiragino Sans", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",  "BIZ UDPGothic", Meiryo, sans-serif;//400,500,600
+$font-base: "Noto Sans JP", sans-serif;
+// $font-base: "Hiragino Sans", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",  "BIZ UDPGothic", Meiryo, sans-serif;//400,500,600
 $font-jp: 'Noto Serif JP', serif;//400,500,600
 $font-en: 'Cormorant Garamond', serif;//400,500
 $font-DinB: 'DIN Condensed Bold';
