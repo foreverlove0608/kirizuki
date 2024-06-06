@@ -1,0 +1,76 @@
+@use "vars" as *;
+
+/* ====================================================
+Header
+==================================================== */
+.main-header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	transition: .3s;
+	background: #fff;
+	@include mq(tb) {
+		padding: 10px 0 0 10px;
+		height: 70px;
+	}
+	&__inner{
+		@include flex(between, center ,wrap);
+		margin: 0 auto;
+		@include mq(tb-min) {
+			padding: 0 0 0 20px;
+		}
+	}
+	&__logo{
+		width: 326px;
+		@include mq(tb) {
+			width: 160px;
+			z-index: 100;
+		}
+	}
+	&__contact{
+		width: calc(100% - 326px);
+		@include flex(end, center);
+		&-tel{
+			@include font-size(14);
+			font-weight: 600;
+			color: #233F5E;
+			span{
+				@include font-size(12);
+				margin-left: 5px;
+			}
+			a{
+				font-family: $font-DinB;
+				@include font-size(39.7055);
+				display: block;
+				color: #01A0C8;
+				position: relative;
+				padding-left: 35px;
+				margin-top: 5px;
+				@include p-before(26px, 26px){
+					background: url(../img/common/ico-tel.png) no-repeat center/100%;
+					top: calc(50% - 13px);
+					left: 0;
+				}
+			}
+		}
+		&-sns{
+			margin-left: 20px;
+			a{
+				background: #06C255;
+				padding: 21px 25px;
+				span{
+					@include font-size(20);
+					line-height: 1.1;
+					color: #fff;
+					display: inline-block;
+					position: relative;
+					padding-left: 60px;
+					background: url(../img/common/ico-line.png) no-repeat left center/45px auto;
+				}
+			}
+		}
+	}
+}
+

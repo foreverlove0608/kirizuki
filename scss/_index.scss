@@ -1,0 +1,348 @@
+@use 'vars' as *;
+
+.lp-mv{
+	background: url(../img/index/mv.jpg) no-repeat center/cover;
+	padding: 32px 0;
+	min-height: 550px;
+	.inner{
+		position: relative;
+	}
+	&__ttl{
+		max-width: 73.5%;
+		position: relative;
+		left: -100px;
+	}
+	&__circle{
+		position: absolute;
+		top: 0;
+		right: -50px;
+		width: 184px;
+	}
+}
+
+
+.lp-intro{
+	background: rgb(1,160,200);
+	background: linear-gradient(90deg, rgba(1,160,200,1) 0%, rgba(138,211,230,1) 100%);
+	padding: 30px 0 0;
+	position: relative;
+	@include p-after(100%, 117%){
+		background: url(../img/index/after-intro.png) no-repeat top center/100% 100%;
+		bottom: -8px;
+		left: 0;
+	}
+
+	.inner{
+		position: relative;
+		z-index: 2;
+	}
+	&__top{
+		max-width: 690px;
+		width: 100%;
+		margin: 0 auto 50px;
+		@include flex(between, 0, wrap);
+		position: relative;
+		left: 3.5%;
+		&-item{
+			&:nth-child(1){
+				width: 45.21%;
+			}
+			&:nth-child(2){
+				width: 50.94%;
+			}
+		}
+	}
+	&__list{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 0 9px;
+		padding-left: 17%;
+		margin-bottom: 20px;
+		&-item{
+			@include flex(start, center);
+		}
+		&-img{
+			width: 140px;
+			border-radius: 50%;
+			border: 6px solid #01A0C8;
+			overflow: hidden;
+		}
+		&-desc{
+			width: calc(100% - 140px);
+			@include fts(24, 30);
+			color: #fff;
+			font-weight: 700;
+			padding-left: 10px;
+		}
+	}
+	&__img{
+		max-width: 320px;
+		position: absolute;
+		left: 0;
+		transform: translateX(-50%);
+		bottom: 0;
+	}
+	&__wp{
+		@include flex(0, 0, wrap);
+		color: #fff;
+		padding-left: 10%;
+		padding-bottom: 14px;
+		&-left{
+			width: 30%;
+			@include font-size(16);
+			line-height: 1.15;
+			font-weight: 600;
+			text-align: center;
+			span{
+				display: block;
+				@include fts(22, 38.5);
+			}
+		}
+		&-right{
+			width: 74%;
+			@include fts(14, 24.5);
+			margin-right: -4%;
+			position: relative;
+			left: 9px;
+		}
+	}
+}
+
+
+.lp-know{
+	padding-top: 30px;
+	
+	&__inner{
+		@include flex(0, end, wrap);
+	}
+	&__ct{
+		width: 65%;
+		padding-bottom: 100px;
+	}
+	&__ttl{
+		width: 90%;
+		margin-bottom: 30px;
+	}
+	&__desc{
+		span{
+			color: #01A0C8;
+			font-weight: 600;
+		}
+		p{
+			margin-bottom: 15px;
+			&:last-of-type{
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__img{
+		width: 35%;
+	}
+
+	&__bottom{
+		padding: 100px 0;
+		background: url(../img/index/bg-know-bottom.png) no-repeat center/cover;
+		position: relative;
+		&-ttl{
+			max-width: 854px;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		&-list{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 0 20px;
+			margin-bottom: 30px;
+		}
+		&-item{
+			text-align: center;
+			@include fts(18, 28);
+			font-weight: 600;
+			color: #233F5E;
+		}
+		&-img{
+			margin-bottom: 10px;
+		}
+		&-note{
+			text-align: right;
+			@include font-size(14);
+			color: #233F5E;
+		}
+	}
+}
+
+
+.lp-customer{
+	padding: 80px 0;
+	background: #01A0C8;
+	&__ttl{
+		max-width: 1033px;
+		margin: 0 auto 50px;
+	}
+	&__list{
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 0 40px;
+		margin-bottom: 40px;
+		&-item{
+			text-align: center;
+			color: #fff;
+			font-weight: 600;
+		}
+		&-img{
+			margin-bottom: 10px;
+		}
+	}
+	&__note{
+		max-width: 1000px;
+		margin: 0 auto;
+		text-align: right;
+		@include font-size(12);
+		color: #fff;
+	}
+}
+
+
+.lp-contact{
+	padding: 100px 0 0;
+	.inner{
+		position: relative;
+		padding-bottom: 100px;
+	}
+	&__ttlsub{
+		max-width: 636px;
+		margin: 0 auto 30px;
+	}
+	&__heading{
+		@include flex(0, 0, wrap);
+		margin-bottom: 50px;
+		&-left{
+			width: 249px;
+		}
+		&-right{
+			width: calc(100% - 249px);
+			padding-left: 50px;
+			padding-right: 10%;
+		}
+	}
+	&__button{
+		max-width: 800px;
+		width: 100%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0 30px;
+		&-item{
+			&--sns{
+				a{
+					display: block;
+					background: #06C255;
+					padding: 41px 25px;
+					border-radius: 15px;
+					position: relative;
+					@include p-after(33px, 33px){
+						background: url(../img/index/arr-line.png) no-repeat center/100%;
+						top: 50%;
+						right: 15px;
+						transform: translateY(-50%);
+					}
+					span{
+						@include font-size(24.8619);
+						line-height: 1.34;
+						font-weight: 600;
+						color: #fff;
+						display: inline-block;
+						position: relative;
+						padding-left: 60px;
+						background: url(../img/common/ico-line.png) no-repeat left center/50px auto;
+					}
+				}
+			}
+			&--tel{
+				a{
+					border: 5px solid #233F5E;
+					border-radius: 15px;
+					display: block;
+					padding: 30px 20px 20px 70px;
+					position: relative;
+					background: #fff url(../img/index/ico-phone.png) no-repeat left 15px center/47px 47px;
+				}
+				.txt-note{
+					width: 106px;
+					height: 32px;
+					@include flex(center, center);
+					color: #fff;
+					background: #233F5E;
+					@include font-size(17.646);
+					font-weight: 600;
+					position: absolute;
+					top: 0;
+					left: -12px;
+					border-radius: 10px;
+					transform: translate(0, -50%);
+					text-align: center;
+					&:after{
+						content: "";
+						width: 0;
+						height: 0;
+						border-width: 9px 5px 0 5px;
+						border-color: #233F5E transparent transparent transparent;
+						border-style: solid;
+						position: absolute;
+						bottom: 0;
+						left: 50%;
+						transform: translate(-50%, 100%);
+					}
+				}
+				.txt-label{
+					@include font-size(18.710);
+					color: #233F5E;
+					span{
+						@include font-size(12);
+						margin-left: 10px;
+						position: relative;
+						top: -2px;
+					}
+				}
+				.txt-tel{
+					font-family: $font-DinB;
+					@include font-size(60);
+					color: #FF7B80;
+				}
+			}
+		}
+	}
+	&__img{
+		max-width: 30%;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		transform: translateX(50%);
+		z-index: -1;
+		&-voice{
+			display: block;
+			width: 66%;
+		}
+	}
+}
+
+
+
+.lp-notification{
+	padding: 50px 0;
+	background: url(../img/index/bg-notification.png) no-repeat center/cover;
+	&__ttl{
+		max-width: 752px;
+		width: 100%;
+		margin: 0 auto 30px;
+	}
+	&__btn{
+		max-width: 543px;
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+}
