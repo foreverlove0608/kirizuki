@@ -4,11 +4,12 @@
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-		<title>新着情報｜株式会社陽栄</title>
+		<title>トップページ｜株式会社陽栄</title>
 		<meta name="description" content="">
 		<meta name="format-detection" content="telephone=no">
 		<link rel="shortcut icon" href="./favicon.ico">
-		<link type="text/css" rel="stylesheet" href="./fonts/css/all.min.css">
+		<link type="text/css" rel="stylesheet" href="./js/vendors/slick/slick-theme.css">
+		<link type="text/css" rel="stylesheet" href="./js/vendors/slick/slick.css">
 		<link type="text/css" rel="stylesheet" href="./css/styles.css">
 	</head>
 	<body>
@@ -32,9 +33,10 @@
 			<section class="lp-mv">
 				<div class="inner">
 					<h1 class="lp-mv__ttl">
-						<img src="./img/index/mv-ttl.png" alt="img">
+						<img src="./img/index/mv-ttl.png" alt="img" class="pc">
+						<img src="./img/index/mv-ttl-sp.png" alt="img" class="sp">
 					</h1>
-					<div class="lp-mv__circle">
+					<div class="lp-mv__circle pc">
 						<img src="./img/index/img-circle-mv.png" alt="img">
 					</div>
 				</div>
@@ -67,18 +69,29 @@
 					</ul>
 					<div class="lp-intro__img">
 						<img src="./img/index/img-ceo.png" alt="img">
+						<div class="lp-intro__img-desc sp"> キリヅキ建築事務所代表<br>一級建築士 <span>桐月 直樹</span>
+						</div>
 					</div>
 					<div class="lp-intro__wp">
-						<div class="lp-intro__wp-left"> キリヅキ建築事務所代表<br>一級建築士 <span>桐月 直樹</span>
+						<div class="lp-intro__wp-left pc"> キリヅキ建築事務所代表<br>一級建築士 <span>桐月 直樹</span>
 						</div>
-						<div class="lp-intro__wp-right">※実質0円になるのは保険が適用された場合です。ご契約の火災保険の内容によっては金額が異なります。<br>※申請手数料が無料になるのは、施工もご依頼いただいた場合に限ります。</div>
+						<div class="lp-intro__wp-right">
+							<div class="pc"><span>※</span>実質0円になるのは保険が適用された場合です。ご契約の火災保険の内容によっては金額が異なります。<br><span>※</span>申請手数料が無料になるのは、施工もご依頼いただいた場合に限ります。</div>
+							<div class="sp">
+								<p><span>※</span>実質0円になるのは保険が適用された場合です。<br>ご契約の火災保険の内容によっては金額が異なります。</p>
+								<p><span>※</span>申請手数料が無料になるのは、施工もご依頼いただいた場合に限ります。</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 			<section class="lp-know">
 				<div class="inner lp-know__inner">
 					<div class="lp-know__ct">
-						<h2 class="lp-know__ttl"><img src="./img/index/know-ttl.png" alt="img"></h2>
+						<h2 class="lp-know__ttl">
+							<img src="./img/index/know-ttl.png" alt="img" class="pc">
+							<img src="./img/index/know-ttl-sp.png" alt="img" class="sp">
+						</h2>
 						<div class="c-txt__01 lp-know__desc">
 							<p> 自然災害による建物被害は、<span>火災保険の補償対象</span>となるケースがあり、これには雨漏りを含むことが多くございます。そのため、火災保険を活用すれば、<span>雨漏り修理の費用を実質下げることが可能です。</span>
 							</p>
@@ -86,7 +99,8 @@
 						</div>
 					</div>
 					<div class="lp-know__img">
-						<img src="./img/index/img-know-01.png" alt="img">
+						<img src="./img/index/img-know-01.png" alt="img" class="pc">
+						<img src="./img/index/img-know-01-sp.png" alt="img" class="sp">
 					</div>
 				</div>
 				<div class="lp-know__bottom">
@@ -97,7 +111,7 @@
 								<div class="lp-know__bottom-img">
 									<img src="./img/index/img-know-02.jpg" alt="img">
 								</div>
-								<p>雹が降ってきてカーポートの<br>屋根が割れてしまった</p>
+								<p>雹が降ってきてカーポートの<br class="pc">屋根が割れてしまった</p>
 							</li>
 							<li class="lp-know__bottom-item">
 								<div class="lp-know__bottom-img">
@@ -109,7 +123,7 @@
 								<div class="lp-know__bottom-img">
 									<img src="./img/index/img-know-04.jpg" alt="img">
 								</div>
-								<p>台風による飛来物が原因で<br>ブロック塀が破損した</p>
+								<p>台風による飛来物が原因で<br class="pc">ブロック塀が破損した</p>
 							</li>
 						</ul>
 						<p class="lp-know__bottom-note">※ご契約の火災保険の内容によっては活用できない場合がございます。詳しくは契約内容をご確認ください。</p>
@@ -117,8 +131,11 @@
 				</div>
 			</section>
 			<section class="lp-customer">
-				<h2 class="lp-customer__ttl"><img src="./img/index/customer-ttl.png" alt="40代 男性"></h2>
-				<ul class="lp-customer__list c-txt__01">
+				<h2 class="lp-customer__ttl">
+					<img src="./img/index/customer-ttl.png" alt="40代 男性" class="pc">
+					<img src="./img/index/customer-ttl-sp.png" alt="40代 男性" class="sp">
+				</h2>
+				<ul class="lp-customer__list js-customer c-txt__01">
 					<li class="lp-customer__list-item">
 						<div class="lp-customer__list-img">
 							<img src="./img/index/img-customer-01.jpg" alt="40代 男性">
@@ -160,8 +177,13 @@
 							<img src="./img/index/contact-circle.png" alt="">
 						</div>
 						<div class="lp-contact__heading-right">
-							<img src="./img/index/contact-ttl-main.png" alt="">
+							<img src="./img/index/contact-ttl-main.png" alt="" class="pc">
+							<img src="./img/index/contact-ttl-main-sp.png" alt="" class="sp">
 						</div>
+					</div>
+					<div class="lp-contact__img sp">
+						<span><img src="./img/index/contact-circle.png" alt=""></span>
+						<img src="./img/index/img-contact-sp.png" alt="">
 					</div>
 					<ul class="lp-contact__button">
 						<li class="lp-contact__button-item lp-contact__button-item--sns">
@@ -175,7 +197,7 @@
 							</a>
 						</li>
 					</ul>
-					<div class="lp-contact__img">
+					<div class="lp-contact__img pc">
 						<span class="lp-contact__img-voice">
 							<img src="./img/index/contact-voice.png" alt="">
 						</span>
@@ -198,21 +220,26 @@
 							<img src="./img/index/ttl-msg.png" alt="">
 						</h2>
 						<div class="lp-msg__content">
-							<img src="./img/index/img-txt-msg.png" alt="">
+							<img src="./img/index/img-txt-msg.png" alt="" class="pc">
+							<img src="./img/index/img-txt-msg-sp.png" alt="" class="sp">
 						</div>
 					</div>
 				</div>
 				<div class="lp-msg__advice"> そんな<span>不安</span>は、<br><small>キリヅキ建築事務所</small>にご相談ください！ </div>
 				<div class="lp-msg__about">
 					<div class="inner">
-						<h3 class="lp-msg__ttl-sub"><img src="./img/index/msg-ttl-02.png" alt=""></h3>
+						<h3 class="lp-msg__ttl-sub">
+							<img src="./img/index/msg-ttl-02.png" alt="" class="pc">
+							<img src="./img/index/msg-ttl-02-sp.png" alt="" class="sp">
+						</h3>
 						<div class="c-txt__01 lp-msg__voice">
 							<p> キリヅキ建築事務所代表の桐月です。<br> 当社は鎌倉・湘南エリアを中心に、おかげさまで多くのお客様にご愛顧いただき、戸建建築、リフォームを多数手がけてまいりました。 </p>
 							<p> 雨漏り修理は原因を特定することが難しい工事のひとつです。<br> そのため間違った雨漏り修理でトラブルに発展してしまうことも少なくありません。<br> 私たちは木造戸建を知り尽くした専門家として、綿密な調査により原因を特定し、最適な修繕方法をご提案いたします。高品質な施工をお値打ち価格で、お客様にご満足いただける修理をお約束いたします。 </p>
 						</div>
 						<div class="lp-msg__card">
 							<div class="lp-msg__card-img">
-								<img src="./img/index/img-card.png" alt="">
+								<img src="./img/index/img-card-01.png" alt="＜保有資格＞" class="pc">
+								<img src="./img/index/img-card-01-sp.png" alt="＜保有資格＞" class="sp">
 							</div>
 							<div class="c-txt__01 lp-msg__card-desc"> ＜保有資格＞<br> 耐震改修技術者／一級耐震技術認定者／茅ヶ崎市木造住宅耐震診断士／既存住宅状況調査技術者／適合証明技術者／建築物石綿含有建材調査者 </div>
 						</div>
@@ -315,13 +342,13 @@
 							<div class="lp-house__list-img">
 								<img src="./img/index/img-house-02.jpg" alt="屋根の下地や柱が腐り折れたり崩れ落ちる">
 							</div>
-							<p class="lp-house__list-desc">腐った天井板が<br>重みに耐えきれず<br>落ちてくる</p>
+							<p class="lp-house__list-desc">屋根の下地や柱が腐り<br>折れたり崩れ落ちる</p>
 						</li>
 						<li class="lp-house__list-item">
 							<div class="lp-house__list-img">
 								<img src="./img/index/img-house-03.jpg" alt="湿った場所を好むシロアリを寄せ付ける">
 							</div>
-							<p class="lp-house__list-desc">腐った天井板が<br>重みに耐えきれず<br>落ちてくる</p>
+							<p class="lp-house__list-desc">湿った場所を好む<br>シロアリを寄せ付ける</p>
 						</li>
 					</ul>
 					<div class="box-resolve">
@@ -329,7 +356,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="lp-contact">
+			<section class="lp-contact lp-contact--styles02">
 				<div class="inner">
 					<h2 class="lp-contact__ttlsub"><img src="./img/index/contact-ttl-sub.png" alt=""></h2>
 					<div class="lp-contact__heading">
@@ -337,8 +364,13 @@
 							<img src="./img/index/contact-circle.png" alt="">
 						</div>
 						<div class="lp-contact__heading-right">
-							<img src="./img/index/contact-ttl-main.png" alt="">
+							<img src="./img/index/contact-ttl-main.png" alt="" class="pc">
+							<img src="./img/index/contact-ttl-main-sp.png" alt="" class="sp">
 						</div>
+					</div>
+					<div class="lp-contact__img sp">
+						<span><img src="./img/index/contact-circle.png" alt=""></span>
+						<img src="./img/index/img-contact-sp.png" alt="">
 					</div>
 					<ul class="lp-contact__button">
 						<li class="lp-contact__button-item lp-contact__button-item--sns">
@@ -352,7 +384,7 @@
 							</a>
 						</li>
 					</ul>
-					<div class="lp-contact__img">
+					<div class="lp-contact__img pc">
 						<span class="lp-contact__img-voice">
 							<img src="./img/index/contact-voice.png" alt="">
 						</span>
@@ -370,8 +402,11 @@
 			</div>
 			<section class="lp-repairing">
 				<div class="inner">
-					<h2 class="lp-repairing__ttl"><img src="./img/index/repairing-ttl.png" alt=""></h2>
-					<div class="c-txt__01 lp-repairing__intro"> 雨漏り修理には一般的に<span>5万〜30万円</span>かかります。<br> しかし、雨漏りの発生には様々な要因が絡んで<br>いることが多く、発生している箇所や状態によっては<span>200万円</span>を超える場合もございます。 </div>
+					<h2 class="lp-repairing__ttl">
+						<img src="./img/index/repairing-ttl.png" alt="" class="pc">
+						<img src="./img/index/repairing-ttl-sp.png" alt="" class="sp">
+					</h2>
+					<div class="c-txt__01 lp-repairing__intro"> 雨漏り修理には一般的に<span>5万〜30万円</span>かかります。<br> しかし、雨漏りの発生には様々な要因が絡んでいることが多く、発生して<br class="pc">いる箇所や状態によっては<span>200万円</span>を超える場合もございます。 </div>
 					<div class="lp-repairing__wp">
 						<div class="lp-repairing__wp-left">
 							<h3 class="lp-repairing__wp-ttl">【雨漏り修理にかかる費用例】</h3>
@@ -413,8 +448,13 @@
 			<section class="lp-cost">
 				<div class="lp-cost__heading">
 					<div class="inner">
-						<div class="lp-cost__heading-img"><img src="./img/index/img-heading-cost.png" alt=""></div>
-						<h2 class="lp-cost__heading-ttl"><img src="./img/index/cost-ttl.png" alt=""></h2>
+						<div class="lp-cost__heading-img" class="pc">
+							<img src="./img/index/img-heading-cost.png" alt="">
+						</div>
+						<h2 class="lp-cost__heading-ttl">
+							<img src="./img/index/cost-ttl.png" alt="" class="pc">
+							<img src="./img/index/cost-ttl-sp.png" alt="" class="sp">
+						</h2>
 					</div>
 				</div>
 				<div class="inner">
@@ -451,14 +491,14 @@
 						<li class="lp-difficult__list-item">
 							<h3 class="lp-difficult__list-ttl">撮影</h3>
 							<div class="lp-difficult__list-img">
-								<img src="./img/index/img-difficult-01.png" alt="撮影">
+								<img src="./img/index/img-difficult-02.png" alt="撮影">
 							</div>
 							<p class="c-txt__01 lp-difficult__list-desc">申請に必要な写真撮影も調査の際に実施します</p>
 						</li>
 						<li class="lp-difficult__list-item">
 							<h3 class="lp-difficult__list-ttl">書類申請</h3>
 							<div class="lp-difficult__list-img">
-								<img src="./img/index/img-difficult-01.png" alt="書類申請">
+								<img src="./img/index/img-difficult-03.png" alt="書類申請">
 							</div>
 							<p class="c-txt__01 lp-difficult__list-desc">経験豊富なスタッフが作成から申請までサポートします</p>
 						</li>
@@ -473,7 +513,7 @@
 							<div class="lp-apply__list-img">
 								<img src="./img/index/img-apply-01.png" alt="雹が降ってきてカーポートの屋根が割れてしまった">
 							</div>
-							<p class="c-txt__01 lp-apply__list-desc">雹が降ってきてカーポートの<br>屋根が割れてしまった</p>
+							<p class="c-txt__01 lp-apply__list-desc">雹が降ってきてカーポートの<br class="pc">屋根が割れてしまった</p>
 						</li>
 						<li class="lp-apply__list-item">
 							<div class="lp-apply__list-img">
@@ -485,7 +525,7 @@
 							<div class="lp-apply__list-img">
 								<img src="./img/index/img-apply-03.jpg" alt="台風による飛来物が原因でブロック塀が破損した">
 							</div>
-							<p class="c-txt__01 lp-apply__list-desc">台風による飛来物が原因で<br>ブロック塀が破損した</p>
+							<p class="c-txt__01 lp-apply__list-desc">台風による飛来物が原因で<br class="pc">ブロック塀が破損した</p>
 						</li>
 					</ul>
 					<div class="lp-apply__contact">ご相談だけでも大歓迎です！<br><span>ぜひお気軽にご相談ください！</span></div>
@@ -493,7 +533,7 @@
 			</section>
 			<section class="lp-process">
 				<div class="inner">
-					<h2 class="c-ttl__01"><img src="./img/index/process-ttl.png" alt=""></h2>
+					<h2 class="c-ttl__01 lp-process__ttl"><img src="./img/index/access-ttl.png" alt=""></h2>
 					<ul class="lp-process__list">
 						<li class="lp-process__list-item">
 							<div class="lp-process__list-img"><img src="./img/index/img-process-01.jpg" alt="お問い合わせ"></div>
@@ -502,8 +542,9 @@
 									<p class="lp-process__list-steps">STEP<span>1</span></p>
 									<p class="lp-process__list-ttl">お問い合わせ</p>
 								</h3>
-								<div class="c-txt__01 lp-process__list-desc"> ご不安なことや聞いてみたいことなど、遠慮なくお問い合わせください。<br> ご相談やお見積もりは無料となっております。<br> ご迷惑になるような営業活動は一切行いませんのでご安心ください。 </div>
+								<div class="c-txt__01 lp-process__list-desc pc-sm"> ご不安なことや聞いてみたいことなど、遠慮なくお問い合わせください。<br> ご相談やお見積もりは無料となっております。<br> ご迷惑になるような営業活動は一切行いませんのでご安心ください。 </div>
 							</div>
+							<div class="c-txt__01 lp-process__list-desc sp-sm"> ご不安なことや聞いてみたいことなど、遠慮なくお問い合わせください。<br> ご相談やお見積もりは無料となっております。<br> ご迷惑になるような営業活動は一切行いませんのでご安心ください。 </div>
 						</li>
 						<li class="lp-process__list-item">
 							<div class="lp-process__list-img"><img src="./img/index/img-process-02.jpg" alt="調査日の調整"></div>
@@ -512,8 +553,9 @@
 									<p class="lp-process__list-steps">STEP<span>2</span></p>
 									<p class="lp-process__list-ttl">調査日の調整</p>
 								</h3>
-								<div class="c-txt__01 lp-process__list-desc"> 現地調査をご希望される場合は、おうかがいする日時を調整いたします。<br>また、築年数やリフォームの有無、雨漏りの状態など、住宅に関する情報を確認します。 </div>
+								<div class="c-txt__01 lp-process__list-desc pc-sm"> 現地調査をご希望される場合は、おうかがいする日時を調整いたします。<br>また、築年数やリフォームの有無、雨漏りの状態など、住宅に関する情報を確認します。 </div>
 							</div>
+							<div class="c-txt__01 lp-process__list-desc sp-sm"> 現地調査をご希望される場合は、おうかがいする日時を調整いたします。<br>また、築年数やリフォームの有無、雨漏りの状態など、住宅に関する情報を確認します。 </div>
 						</li>
 						<li class="lp-process__list-item">
 							<div class="lp-process__list-img"><img src="./img/index/img-process-03.jpg" alt="調査当日"></div>
@@ -522,8 +564,9 @@
 									<p class="lp-process__list-steps">STEP<span>3</span></p>
 									<p class="lp-process__list-ttl">調査当日</p>
 								</h3>
-								<div class="c-txt__01 lp-process__list-desc"> 当社の技術者がおうかがし、住宅の外や中から調査を行います。<br>調査時間は約1〜2時間となります。 </div>
+								<div class="c-txt__01 lp-process__list-desc pc-sm"> 当社の技術者がおうかがし、住宅の外や中から調査を行います。<br>調査時間は約1〜2時間となります。 </div>
 							</div>
+							<div class="c-txt__01 lp-process__list-desc sp-sm"> 当社の技術者がおうかがし、住宅の外や中から調査を行います。<br>調査時間は約1〜2時間となります。 </div>
 						</li>
 						<li class="lp-process__list-item">
 							<div class="lp-process__list-img"><img src="./img/index/img-process-04.jpg" alt="お見積もりと保険申請の手配"></div>
@@ -532,8 +575,9 @@
 									<p class="lp-process__list-steps">STEP<span>4</span></p>
 									<p class="lp-process__list-ttl">お見積もりと保険申請の手配</p>
 								</h3>
-								<div class="c-txt__01 lp-process__list-desc"> 調査結果を元に、お見積もりを実施いたします。<br>合わせて、火災保険の申請手配を行います。 </div>
+								<div class="c-txt__01 lp-process__list-desc pc-sm"> 調査結果を元に、お見積もりを実施いたします。<br>合わせて、火災保険の申請手配を行います。 </div>
 							</div>
+							<div class="c-txt__01 lp-process__list-desc sp-sm"> 調査結果を元に、お見積もりを実施いたします。<br>合わせて、火災保険の申請手配を行います。 </div>
 						</li>
 						<li class="lp-process__list-item">
 							<div class="lp-process__list-img"><img src="./img/index/img-process-05.jpg" alt="お問い合わせ"></div>
@@ -542,8 +586,9 @@
 									<p class="lp-process__list-steps">STEP<span>5</span></p>
 									<p class="lp-process__list-ttl">修理工事の開始</p>
 								</h3>
-								<div class="c-txt__01 lp-process__list-desc"> 調整した日程に訪問し、修理工事を行います。 </div>
+								<div class="c-txt__01 lp-process__list-desc pc-sm"> 調整した日程に訪問し、修理工事を行います。 </div>
 							</div>
+							<div class="c-txt__01 lp-process__list-desc sp-sm"> 調整した日程に訪問し、修理工事を行います。 </div>
 						</li>
 						<li class="lp-process__list-item">
 							<div class="lp-process__list-img"><img src="./img/index/img-process-06.jpg" alt="修理完了"></div>
@@ -552,80 +597,82 @@
 									<p class="lp-process__list-steps">STEP<span>6</span></p>
 									<p class="lp-process__list-ttl">修理完了</p>
 								</h3>
-								<div class="c-txt__01 lp-process__list-desc">散水試験の上、問題なければ、修理完了となります。</div>
+								<div class="c-txt__01 lp-process__list-desc pc-sm">散水試験の上、問題なければ、修理完了となります。</div>
 							</div>
+							<div class="c-txt__01 lp-process__list-desc sp-sm">散水試験の上、問題なければ、修理完了となります。</div>
 						</li>
 					</ul>
 				</div>
 			</section>
 			<section class="lp-area">
 				<div class="inner">
-					<h2 class="c-ttl__01">対応エリア</h2>
+					<h2 class="c-ttl__01 lp-area__ttl"><img src="./img/index/area-ttl.png" alt="対応エリア"></h2>
 					<div class="c-txt__01 lp-area__intro"> 神奈川を中心に、東京・千葉・埼玉まで対応いたします。<br>上記以外のエリアの方は、ご相談させていただきますのでお気軽にお問い合わせください。 </div>
 					<div class="lp-area__img">
-						<img src="./img/index/img-area.png" alt="対応エリア">
+						<img src="./img/index/img-area.png" alt="対応エリア" class="pc">
+						<img src="./img/index/img-area-sp.png" alt="対応エリア" class="sp">
 					</div>
 				</div>
 			</section>
 			<section class="lp-qa">
 				<div class="inner">
-					<h2 class="c-ttl__01 lp-qa__ttl">よくあるご質問</h2>
+					<h2 class="c-ttl__01 lp-qa__ttl"><img src="./img/index/qa-ttl.png" alt="よくあるご質問"></h2>
 					<dl class="lp-qa__box">
-						<dt class="lp-qa__q">いろんな業者を検討してますが、値段が載っていなくて不安です</dt>
+						<dt class="lp-qa__q">いろんな業者を検討してますが、<br class="sp">値段が載っていなくて不安です</dt>
 						<dd class="lp-qa__a"> 雨漏り修理は原因が判明しないと、金額を出すのが難しいところがあります。<br>まずは現地調査を依頼してみてください。 </dd>
 					</dl>
 					<dl class="lp-qa__box">
-						<dt class="lp-qa__q">いろんな業者を検討してますが、値段が載っていなくて不安です</dt>
-						<dd class="lp-qa__a"> 雨漏り修理は原因が判明しないと、金額を出すのが難しいところがあります。<br>まずは現地調査を依頼してみてください。 </dd>
+						<dt class="lp-qa__q">必要以上にお金を<br class="sp">請求されてしまうのでは不安です</dt>
+						<dd class="lp-qa__a"> 現状を実際に確認いただきながら、どのような工事が必要になるのか、そしてどのくらいの金額がかかるのか丁寧に説明いたしますのでご安心ください。 </dd>
 					</dl>
 					<dl class="lp-qa__box">
-						<dt class="lp-qa__q">いろんな業者を検討してますが、値段が載っていなくて不安です</dt>
-						<dd class="lp-qa__a"> 雨漏り修理は原因が判明しないと、金額を出すのが難しいところがあります。<br>まずは現地調査を依頼してみてください。 </dd>
+						<dt class="lp-qa__q">雨漏りが再発することはありますか？</dt>
+						<dd class="lp-qa__a"> 再発の可能性はあります。雨漏りの原因は完璧に把握することが難しく、施工した箇所とは違う箇所から発生することがあります。再発した場合は、適宜ご対応いたしますのでご安心ください。 </dd>
 					</dl>
 					<dl class="lp-qa__box">
-						<dt class="lp-qa__q">いろんな業者を検討してますが、値段が載っていなくて不安です</dt>
-						<dd class="lp-qa__a"> 雨漏り修理は原因が判明しないと、金額を出すのが難しいところがあります。<br>まずは現地調査を依頼してみてください。 </dd>
+						<dt class="lp-qa__q">修理にはどのくらい時間がかかりますか？</dt>
+						<dd class="lp-qa__a"> 簡単なケースだと1時間、数カ所に原因があるなど複雑な場合は数ヶ月渡る場合もございます。 </dd>
 					</dl>
 				</div>
 			</section>
-			<section class="lp-contact">
+			<section class="lp-entry">
 				<div class="inner">
-					<h2 class="c-ttl__01 lp-contact__ttl">お問い合わせ</h2>
-					<div class="c-txt__01 lp-contact__intro"> ご相談・資料請求は無料で承ります。<br>お電話またはLINE、下記フォームよりお気軽にお問い合わせください。 </div>
-					<div class="lp-contact__form">
-						<dl class="lp-contact__form-item">
-							<dt class="lp-contact__form-label">名前<span class="required">必須</span></dt>
-							<dd class="lp-contact__form-input lp-contact__form-input--gr01">
+					<h2 class="c-ttl__01 lp-entry__ttl"><img src="./img/index/contact-ttl.png" alt="お問い合わせ"></h2>
+					<div class="c-txt__01 lp-entry__intro"> ご相談・資料請求は無料で承ります。<br>お電話またはLINE、下記フォームより<br class="sp">お気軽にお問い合わせください。 </div>
+					<div class="lp-entry__form">
+						<dl class="lp-entry__form-item">
+							<dt class="lp-entry__form-label">お名前<span class="required">必須</span></dt>
+							<dd class="lp-entry__form-input lp-entry__form-input--gr01">
 								<input type="text" class="form-control" placeholder="例）山田">
 								<input type="text" class="form-control" placeholder="例）太郎">
 							</dd>
 						</dl>
-						<dl class="lp-contact__form-item">
-							<dt class="lp-contact__form-label">電話番号<span class="required">必須</span></dt>
-							<dd class="lp-contact__form-input">
+						<dl class="lp-entry__form-item">
+							<dt class="lp-entry__form-label">電話番号<span class="required">必須</span></dt>
+							<dd class="lp-entry__form-input">
 								<input type="text" class="form-control" placeholder="例）09012345678">
 							</dd>
 						</dl>
-						<dl class="lp-contact__form-item">
-							<dt class="lp-contact__form-label">メールアドレス<span class="required">必須</span></dt>
-							<dd class="lp-contact__form-input">
+						<dl class="lp-entry__form-item">
+							<dt class="lp-entry__form-label">メールアドレス<span class="required">必須</span></dt>
+							<dd class="lp-entry__form-input">
 								<input type="text" class="form-control" placeholder="例）info@example.com">
 							</dd>
 						</dl>
-						<dl class="lp-contact__form-item">
-							<dt class="lp-contact__form-label">住所<span class="required">必須</span></dt>
-							<dd class="lp-contact__form-input">
-								<dl class="lp-contact__form-dl lp-contact__form-dl--zipcode">
-									<dt class="lp-contact__form-dt">郵便番号</dt>
-									<dd class="lp-contact__form-dd">
-										<input type="text" class="form-control" placeholder="例）123">
+						<dl class="lp-entry__form-item">
+							<dt class="lp-entry__form-label">住所<span class="required">必須</span></dt>
+							<dd class="lp-entry__form-input">
+								<dl class="lp-entry__form-dl lp-entry__form-dl--zipcode">
+									<dt class="lp-entry__form-dt">郵便番号</dt>
+									<dd class="lp-entry__form-dd">
+										<input type="text" name="zip1" class="form-control" placeholder="例）123">
 										<span>−</span>
-										<input type="text" class="form-control" placeholder="例）5678">
+										<input type="text" name="zip2" class="form-control" placeholder="例）5678" onkeyup="AjaxZip3.zip2addr('zip1','zip2','address1','address2');">
 									</dd>
 								</dl>
-								<dl class="lp-contact__form-dl lp-contact__form-dl--province">
-									<dt class="lp-contact__form-dt">都道府県</dt>
-									<dd class="lp-contact__form-dd">
+								<dl class="lp-entry__form-dl lp-entry__form-dl--province">
+									<dt class="lp-entry__form-dt">都道府県</dt>
+									<dd class="lp-entry__form-dd">
 										<select name="address1" class="form-control form-control--select">
 											<option value="">-- 選択してください --</option>
 											<option value="北海道">北海道</option>
@@ -678,15 +725,15 @@
 										</select>
 									</dd>
 								</dl>
-								<dl class="lp-contact__form-dl">
-									<dt class="lp-contact__form-dt">住所</dt>
-									<dd class="lp-contact__form-dd"><input type="text" class="form-control" placeholder="例）●●市▲▲町1-23-45"></dd>
+								<dl class="lp-entry__form-dl">
+									<dt class="lp-entry__form-dt">住所</dt>
+									<dd class="lp-entry__form-dd"><input type="text" class="form-control" name="address2" placeholder="例）●●市▲▲町1-23-45"></dd>
 								</dl>
 							</dd>
 						</dl>
-						<dl class="lp-contact__form-item">
-							<dt class="lp-contact__form-label">要望<span class="required">必須</span></dt>
-							<dd class="lp-contact__form-input lp-contact__form-input--radio">
+						<dl class="lp-entry__form-item">
+							<dt class="lp-entry__form-label">ご要望<span class="required">必須</span></dt>
+							<dd class="lp-entry__form-input lp-entry__form-input--radio">
 								<span class="mwform-radio-field horizontal-item">
 									<label>
 										<input type="radio" name="radio-type" value="無料相談">
@@ -707,14 +754,14 @@
 								</span>
 							</dd>
 						</dl>
-						<dl class="lp-contact__form-item">
-							<dt class="lp-contact__form-label">問い合わせ内容</dt>
-							<dd class="lp-contact__form-input">
-								<p>ご相談内容やご訪問の希望等がございましたらご記入ください</p>
+						<dl class="lp-entry__form-item">
+							<dt class="lp-entry__form-label">問い合わせ内容</dt>
+							<dd class="lp-entry__form-input lp-entry__form-input--textarea">
+								<p>ごご相談内容やご訪問の希望等が<br class="sp">ざいましたらご記入ください</p>
 								<textarea name="" id="" class="form-control form-control--textarea"></textarea>
 							</dd>
 						</dl>
-						<div class="lp-contact__form-check">
+						<div class="lp-entry__form-check">
 							<span class="mwform-checkbox-field horizontal-item">
 								<label for="js-check-checked-1" class="checked">
 									<input type="checkbox" name="agree" value="プライバシーポリシーに同意する" id="js-check-checked-1">
@@ -722,7 +769,7 @@
 								</label>
 							</span>
 						</div>
-						<div class="lp-contact__form-button">
+						<div class="lp-entry__form-button">
 							<button type="submit">送信する</button>
 						</div>
 					</div>
@@ -780,14 +827,11 @@
 						</dl>
 					</div>
 				</div>
-				<small class="main-footer__copyright">Copyright &copy;2022 coding LABO</small>
 			</div>
-			<a href="#" class="btn-fix-contact js-contact"><i class="fa-solid fa-envelope"></i>お問い合わせはこちら</a>
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script src="./js/vendors/jquery.matchHeight-min.js"></script>
-		<script src="./js/vendors/ofi.min.js"></script>
+		<script src="./js/vendors/ajaxzip3.js"></script>
+		<script src="./js/vendors/slick/slick.min.js"></script>
 		<script src="./js/setting.js"></script>
 	</body>
-</html>ody>
-</html>/html>ml>>
+</html>

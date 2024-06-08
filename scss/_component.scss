@@ -90,8 +90,8 @@ Component
 .c-txt{
 	&__01{//14/29
 		@include fts(18, 28);
-		@include mq(sm) {
-			line-height: 1.8;
+		@include mq {
+			@include fts(14, 20);
 		}
 	}
 }

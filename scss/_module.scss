@@ -6,7 +6,7 @@ Layout
 .wrapper{
 	padding-top: 86px;
 	@include mq(tb){
-		padding-top: 70px;
+		padding-top: 50px;
 	}
 }
 
@@ -16,7 +16,7 @@ Layout
 	max-width: 1000px;
 	@include mq() {
 		width: 100%;
-		padding: 0 5%
+		padding: 0 4%;
 	}
 }
 
@@ -34,6 +34,10 @@ Layout
 	appearance: none;
 	-webkit-appearance: none;
 	border-radius: 0 !important;
+	@include mq{
+		height: 43px;
+		@include font-size(14);
+	}
 	&--select{
 		cursor: pointer;
 		max-width: 340px;
@@ -42,6 +46,9 @@ Layout
 	&--textarea{
 		height: 287px;
 		padding: 15px;
+		@include mq{
+			height: 190px;
+		}
 	}
 	&::placeholder {
 		color: #919191;
@@ -61,7 +68,9 @@ Layout
 //radio end check box
 
 .mwform-checkbox-field-text{
-	padding-right: 67px !important;
+	@include mq(md-min){
+		padding-right: 70px !important;
+	}
 }
 
 
@@ -73,7 +82,7 @@ Layout
 	font-weight: 600;
 	display: inline-block;
 	@include mq {
-		@include font-size(16);
+		@include font-size(14);
 	}
 	input{
 		position: absolute;
@@ -86,24 +95,23 @@ Layout
 		cursor: pointer;
 		&[type="checkbox"]{
 			& + span{
-				padding: 3px 0 3px 37px;
+				padding: 3px 0 3px 22px;
 				@include mq{
-					padding: 3px 0 3px 35px;
+					padding: 3px 0 3px 26px;
 				}
 				&::before{
-					width: 20px;
-					height: 20px;
+					width: 14px;
+					height: 14px;
 					@include mq{
-						top: -2px;
+						top: 2px;
 						transform: none;
 					}
 				}
 				&:after{
 					background-color: transparent;
-					top: 6px;
-					left: 4px;
-					width: 16px;
-					height: 6px;
+					left: 3px;
+					width: 12px;
+					height: 4px;
 					border-style: solid;
 					border-color: white;
 					border-width: 0 0 2px 2px;
@@ -111,7 +119,7 @@ Layout
 					transform: rotate(-45deg) scale(0);
 					@include mq {
 						top: 3px;
-						left: 7px;
+						left: 1px;
 						width: 14px;
 						height: 5px;
 					}
@@ -136,10 +144,10 @@ Layout
 					border-radius: 50%;
 				}
 				&:after{
-					top: 6px;
-					left: 6px;
-					width: 14px;
-					height: 14px;
+					top: 4px;
+					left: 4px;
+					width: 13px;
+					height: 13px;
 					@include mq(){
 						left: 7px;
 						width: 12px;
@@ -167,7 +175,7 @@ Layout
 		user-select: none;
 		cursor: pointer;
 		@include mq {
-			padding: 2px 0 2px 30px;
+			padding: 2px 0 2px 24px;
 		}
 		&:before{
 			box-sizing: content-box;
@@ -182,6 +190,10 @@ Layout
 			border: 1px solid #707070;
 			text-align: center;
 			transition: all 0.4s ease;
+			@include mq{
+				width: 15px;
+				height: 15px;
+			}
 		}
 		&:after{
 			box-sizing: content-box;
