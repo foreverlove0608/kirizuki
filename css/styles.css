@@ -2844,6 +2844,17 @@ Footer
       -ms-transform: translateY(0);
           transform: translateY(0);
 }
+@media screen and (min-width: 835px) {
+  .lp-contact__img span {
+    width: 60.6%;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    -webkit-transform: translateY(-78%);
+        -ms-transform: translateY(-78%);
+            transform: translateY(-78%);
+  }
+}
 
 .lp-notification {
   padding: 50px 0 58px;

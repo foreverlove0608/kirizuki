@@ -630,6 +630,13 @@
 			left: 20px;
 			top: 38px;
 			transform: translateY(0);
+			@include mq(md-min){
+				width: 60.6%;
+				position: absolute;
+				left: 10px;
+				top: 0;
+				transform: translateY(-78%);
+			}
 		}
 	}
 }
