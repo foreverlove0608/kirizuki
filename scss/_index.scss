@@ -815,6 +815,7 @@
 			@include font-size(14);
 			padding: 23px 16px 17px;
 			margin-bottom: 40px;
+			max-width: 100%;
 		}
 		&:after{
 			content: "";

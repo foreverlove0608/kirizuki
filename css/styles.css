@@ -1372,9 +1372,9 @@ Layout
   .mwform-checkbox-field label input[type=radio] + span:after,
 .mwform-radio-field label input[type=radio] + span:after,
 .pure-input input[type=radio] + span:after {
-    left: 7px;
-    width: 12px;
-    height: 12px;
+    left: 5px;
+    width: 9px;
+    height: 9px;
   }
 }
 .mwform-checkbox-field label input[type=radio]:checked + span:before,
@@ -1746,11 +1746,6 @@ Header
   transition: 0.3s;
   background: #fff;
 }
-@media screen and (max-width: 834px) {
-  .main-header {
-    padding-bottom: 15px;
-  }
-}
 .main-header__inner {
   display: -ms-flexbox;
   display: -webkit-box;
@@ -1772,7 +1767,7 @@ Header
 }
 @media screen and (max-width: 834px) {
   .main-header__inner {
-    padding: 0px 14px;
+    padding: 10px 14px;
   }
 }
 .main-header__logo {
@@ -1787,8 +1782,6 @@ Header
   .main-header__logo {
     width: 160px;
     z-index: 100;
-    position: relative;
-    top: 6px;
   }
 }
 .main-header__contact {
@@ -1811,9 +1804,6 @@ Header
 @media screen and (max-width: 640px) {
   .main-header__contact {
     width: calc(100% - 160px);
-    position: relative;
-    left: 2px;
-    top: 5px;
   }
 }
 .main-header__contact-tel {
@@ -1855,7 +1845,7 @@ Header
   .main-header__contact-tel a {
     font-size: 2.3465rem;
     padding-left: 20px;
-    margin-top: 0;
+    line-height: 1;
   }
 }
 .main-header__contact-tel a:before {
@@ -3065,6 +3055,7 @@ Footer
     font-size: 1.4rem;
     padding: 23px 16px 17px;
     margin-bottom: 40px;
+    max-width: 100%;
   }
 }
 .lp-msg__voice:after {
