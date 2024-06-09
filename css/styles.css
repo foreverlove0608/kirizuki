@@ -1835,36 +1835,30 @@ Header
 .main-header__contact-tel a {
   font-family: "DIN Condensed Bold";
   font-size: 3.97055rem;
-  display: block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #01A0C8;
   position: relative;
-  padding-left: 35px;
   margin-top: 5px;
 }
 @media screen and (max-width: 640px) {
   .main-header__contact-tel a {
     font-size: 2.3465rem;
-    padding-left: 20px;
     line-height: 1;
-    height: 23px;
-    display: block;
   }
 }
-.main-header__contact-tel a:before {
-  content: "";
-  display: inline-block;
-  position: absolute;
+.main-header__contact-tel a img {
   width: 26px;
-  height: 26px;
-  background: url(../img/common/ico-tel.png) no-repeat center/100%;
-  top: calc(50% - 13px);
-  left: 0;
+  margin-right: 10px;
 }
-@media screen and (max-width: 640px) {
-  .main-header__contact-tel a:before {
+@media screen and (max-width: 834px) {
+  .main-header__contact-tel a img {
     width: 15px;
-    height: 15px;
-    top: 0;
+    margin-right: 5px;
   }
 }
 .main-header__contact-sns {
