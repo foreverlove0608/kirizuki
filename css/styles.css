@@ -1847,6 +1847,7 @@ Header
     padding-left: 20px;
     line-height: 1;
     height: 23px;
+    display: block;
   }
 }
 .main-header__contact-tel a:before {

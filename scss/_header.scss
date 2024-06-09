@@ -72,6 +72,7 @@ Header
 					padding-left: 20px;
 					line-height: 1;
 					height: 23px;
+					display: block;
 				}
 				@include p-before(26px, 26px){
 					background: url(../img/common/ico-tel.png) no-repeat center/100%;
