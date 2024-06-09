@@ -596,6 +596,7 @@
 					}
 					@include mq{
 						@include font-size(40.26);
+						margin-top: 8px;
 					}
 					@include mq(sm){
 						@include font-size(49.26);

@@ -71,6 +71,7 @@ Header
 					@include font-size(23.465);
 					padding-left: 20px;
 					line-height: 1;
+					height: 23px;
 				}
 				@include p-before(26px, 26px){
 					background: url(../img/common/ico-tel.png) no-repeat center/100%;
@@ -79,7 +80,8 @@ Header
 					@include mq(sm){
 						width: 15px;
 						height: 15px;
-						top: calc(50% - 7.5px);
+						top: 50%;
+						transform: translateY(-50%);
 					}
 				}
 			}

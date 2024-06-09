@@ -1846,6 +1846,7 @@ Header
     font-size: 2.3465rem;
     padding-left: 20px;
     line-height: 1;
+    height: 23px;
   }
 }
 .main-header__contact-tel a:before {
@@ -1862,7 +1863,10 @@ Header
   .main-header__contact-tel a:before {
     width: 15px;
     height: 15px;
-    top: calc(50% - 7.5px);
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 }
 .main-header__contact-sns {
@@ -2791,6 +2795,7 @@ Footer
 @media screen and (max-width: 834px) {
   .lp-contact__button-item--tel .txt-tel {
     font-size: 4.026rem;
+    margin-top: 8px;
   }
 }
 @media screen and (max-width: 640px) {
