@@ -1860,6 +1860,8 @@ Header
   .main-header__contact-tel a img {
     width: 15px;
     margin-right: 5px;
+    position: relative;
+    top: -5px;
   }
 }
 .main-header__contact-sns {
