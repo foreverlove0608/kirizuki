@@ -1864,10 +1864,7 @@ Header
   .main-header__contact-tel a:before {
     width: 15px;
     height: 15px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    top: 3px;
   }
 }
 .main-header__contact-sns {
