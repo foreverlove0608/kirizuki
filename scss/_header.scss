@@ -70,6 +70,7 @@ Header
 				@include mq(sm){
 					@include font-size(23.465);
 					line-height: 1;
+					height: 23px;
 				}
 				img{
 					width: 26px;

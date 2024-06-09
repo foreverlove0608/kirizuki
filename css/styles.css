@@ -1849,6 +1849,7 @@ Header
   .main-header__contact-tel a {
     font-size: 2.3465rem;
     line-height: 1;
+    height: 23px;
   }
 }
 .main-header__contact-tel a img {
