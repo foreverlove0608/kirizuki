@@ -21,11 +21,26 @@
 	font-display: swap;
 }
 
-$font-base: "Noto Sans JP", sans-serif;
+@font-face {
+    font-family: 'YuKyokasyo';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+	src: url("../fonts/yukyokasyo/YuKyo-Medium-Yoko.woff2") format("woff2"),
+    url("../fonts/yukyokasyo/YuKyo-Medium-Yoko.woff") format("woff");
+}
+
+
+
+$font-base: "Hiragino Sans", 'メイリオ', "Meiryo", "ＭＳ Ｐゴシック", 'MS PGothic', sans-serif;
 // $font-base: "Hiragino Sans", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",  "BIZ UDPGothic", Meiryo, sans-serif;//400,500,600
 $font-jp: 'Noto Serif JP', serif;//400,500,600
 $font-en: 'Cormorant Garamond', serif;//400,500
 $font-DinB: 'DIN Condensed Bold';
+$font-DinB: "din-condensed", sans-serif;
+$font-vdl: "vdl-penletter", sans-serif;
+$font-tsukubrdgothic: "fot-tsukubrdgothic-std", sans-serif;
+$font-YuKyo: 'YuKyokasyo', sans-serif;
 
 
 
