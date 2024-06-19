@@ -563,12 +563,9 @@
 						border-color: #233F5E transparent transparent transparent;
 						border-style: solid;
 						position: absolute;
-						bottom: 0;
+						bottom: 1px;
 						left: 50%;
 						transform: translate(-50%, 100%);
-						@include mq{
-						
-						}
 					}
 				}
 				.txt-label{
@@ -745,7 +742,7 @@
 			border-width: 53px 30px 0 30px;
 			border-color: #233F5E transparent transparent transparent;
 			border-style: solid;
-			bottom: 0;
+			bottom: 1px;
 			left: 50%;
 			transform: translate(-50%, 100%);
 			position: absolute;
@@ -1077,14 +1074,22 @@
 		}
 		&:last-of-type{
 			margin-bottom: 0;
+			.lp-qa__a{
+				padding-top: 11px;
+				line-height: 1;
+				&::before{
+					top: 0;
+				}
+			}
 		}
 	}
 	&__q{
 		@include font-size(20);
 		font-weight: 600;
-		padding-left: 50px;
+		// padding-left: 50px;
+		padding: 7.6px 0 12px 50px;
 		position: relative;
-		margin-bottom: 15px;
+		margin-bottom: 12.6px;
 		@include mq{
 			@include font-size(14);
 			line-height: 1.2;
@@ -1099,7 +1104,7 @@
 			border-radius: 50%;
 			@include flex(center, center);
 			position: absolute;
-			top: -10px;
+			top: 0;
 			left: 0;
 			@include font-size(20);
 			font-weight: 600;
@@ -1130,7 +1135,7 @@
 			border-radius: 50%;
 			@include flex(center, center);
 			position: absolute;
-			top: 5px;
+			top: -1.32px;
 			left: 0;
 			@include font-size(20);
 			font-weight: 600;
@@ -1464,7 +1469,6 @@
 			color: #01A0C8;
 			@include mq{
 				@include font-size(13.98);
-				letter-spacing: 2px;
 				margin-bottom: 10px;
 			}
 			span{
@@ -1478,7 +1482,7 @@
 				margin-left: 4px;
 				@include mq{
 					@include font-size(18.05);
-					margin-left: 0;
+					margin-left: 3px;
 					width: 25px;
 					height: 25px;
 				}
@@ -2069,7 +2073,7 @@
 			transform: translate(-50%, 100%);
 			@include mq{
 				border-width: 42px 56px 0 56px;
-				bottom: -9px;
+				bottom: -8px;
 			}
 		}
 		span{
@@ -2150,6 +2154,15 @@
 						}
 					}
 				}
+				&:nth-child(2){
+					position: relative;
+					@include p-before(99px, 124px){
+						background: url(../img/index/before-house.png) no-repeat center/100%;
+						left: 0;
+						top: 50%;
+						transform: translate(0, -50%);
+					}
+				}
 			}
 		}
 		&-img{
@@ -2164,6 +2177,8 @@
 			text-align: center;
 			@include fts(22, 29);
 			font-weight: 800;
+			position: relative;
+			z-index: 2;
 			@include mq{
 				@include fts(14.44, 19.035);
 			}

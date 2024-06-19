@@ -83,10 +83,12 @@ Header
 					width: 26px;
 					margin-right: 10px;
 					@include mq{
-						width: 15px;
 						margin-right: 5px;
 						position: relative;
 						top: -3px;
+					}
+					@include mq(sm){
+						width: 15px;
 					}
 				}
 			}

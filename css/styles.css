@@ -1892,10 +1892,14 @@ Header
 }
 @media screen and (max-width: 834px) {
   .main-header__contact-tel a img {
-    width: 15px;
     margin-right: 5px;
     position: relative;
     top: -3px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .main-header__contact-tel a img {
+    width: 15px;
   }
 }
 .main-header__contact-sns {
@@ -2788,7 +2792,7 @@ Footer
   border-color: #233F5E transparent transparent transparent;
   border-style: solid;
   position: absolute;
-  bottom: 0;
+  bottom: 1px;
   left: 50%;
   -webkit-transform: translate(-50%, 100%);
       -ms-transform: translate(-50%, 100%);
@@ -3004,7 +3008,7 @@ Footer
   border-width: 53px 30px 0 30px;
   border-color: #233F5E transparent transparent transparent;
   border-style: solid;
-  bottom: 0;
+  bottom: 1px;
   left: 50%;
   -webkit-transform: translate(-50%, 100%);
       -ms-transform: translate(-50%, 100%);
@@ -3424,12 +3428,19 @@ Footer
 .lp-qa__box:last-of-type {
   margin-bottom: 0;
 }
+.lp-qa__box:last-of-type .lp-qa__a {
+  padding-top: 11px;
+  line-height: 1;
+}
+.lp-qa__box:last-of-type .lp-qa__a::before {
+  top: 0;
+}
 .lp-qa__q {
   font-size: 2rem;
   font-weight: 600;
-  padding-left: 50px;
+  padding: 7.6px 0 12px 50px;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 12.6px;
 }
 @media screen and (max-width: 834px) {
   .lp-qa__q {
@@ -3455,7 +3466,7 @@ Footer
   -webkit-box-align: center;
           align-items: center;
   position: absolute;
-  top: -10px;
+  top: 0;
   left: 0;
   font-size: 2rem;
   font-weight: 600;
@@ -3502,7 +3513,7 @@ Footer
   -webkit-box-align: center;
           align-items: center;
   position: absolute;
-  top: 5px;
+  top: -1.32px;
   left: 0;
   font-size: 2rem;
   font-weight: 600;
@@ -3944,7 +3955,6 @@ Footer
 @media screen and (max-width: 834px) {
   .lp-process__list-steps {
     font-size: 1.398rem;
-    letter-spacing: 2px;
     margin-bottom: 10px;
   }
 }
@@ -3969,7 +3979,7 @@ Footer
 @media screen and (max-width: 834px) {
   .lp-process__list-steps span {
     font-size: 1.805rem;
-    margin-left: 0;
+    margin-left: 3px;
     width: 25px;
     height: 25px;
   }
@@ -4726,7 +4736,7 @@ Footer
 @media screen and (max-width: 834px) {
   .lp-careful__cause:after {
     border-width: 42px 56px 0 56px;
-    bottom: -9px;
+    bottom: -8px;
   }
 }
 .lp-careful__cause span {
@@ -4846,6 +4856,22 @@ Footer
     padding-left: 15px;
     padding-right: 0;
   }
+  .lp-house__list-item:nth-child(2) {
+    position: relative;
+  }
+  .lp-house__list-item:nth-child(2):before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 99px;
+    height: 124px;
+    background: url(../img/index/before-house.png) no-repeat center/100%;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
 }
 .lp-house__list-img {
   margin-bottom: 5px;
@@ -4863,6 +4889,8 @@ Footer
   font-size: 2.2rem;
   line-height: 1.3181818182;
   font-weight: 800;
+  position: relative;
+  z-index: 2;
 }
 @media screen and (max-width: 834px) {
   .lp-house__list-desc {
