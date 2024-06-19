@@ -1,4 +1,13 @@
-"use strict"; $(window).width() < 835 && $(".js-customer").slick({ infinite: !0, slidesToShow: 3, slidesToScroll: 1 });
+/*----------------------------------------
+	Pages
+----------------------------------------*/
+if($(window).width() < 835){
+	$('.js-customer').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1
+	});
+}
 
 
 var headerHeight = $('#main-header').outerHeight();
@@ -14,7 +23,8 @@ if (urlHash) {
 
 $('.js-scroll').click(function () {
 	var href = $(this).attr("href");
+	console.log(href);
 	var target = $(href);
-	var position = target.offset().top ;
+	var position = target.offset().top - headerHeight;
 	$('body,html').stop().animate({scrollTop: position}, 1000);
 });
