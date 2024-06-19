@@ -592,6 +592,7 @@
 					font-family: $font-DinB;
 					@include font-size(55);
 					color: #FF7B80;
+					letter-spacing: -2px;
 					@include mq(tb){
 						@include font-size(55);
 					}
@@ -1022,6 +1023,7 @@
 		}
 		&-caption{
 			color: #fff;
+			font-weight: 600;
 			@include mq{
 				@include font-size(12);
 			}
@@ -1473,7 +1475,7 @@
 				@include font-size(28.1629);
 				color: #fff;
 				@include flex(center, center);
-				margin-left: 10px;
+				margin-left: 4px;
 				@include mq{
 					@include font-size(18.05);
 					margin-left: 0;
@@ -1535,6 +1537,7 @@
 		}
 		&-desc{
 			text-align: center;
+			font-weight: 600;
 			@include mq(tb){
 				@include font-size(16);
 			}
@@ -1606,6 +1609,7 @@
 			}
 		}
 		&-desc{
+			font-weight: 600;
 			@include mq{
 				padding-left: 8px;
    				line-height: 1.2;

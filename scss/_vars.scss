@@ -31,9 +31,11 @@
 }
 
 
+@font-face {font-family: 'NotoSansJP';font-weight: 400;font-style: normal;font-display: swap;src: url("../fonts/NotoSansJP-Regular.woff2") format("woff2"), url("../fonts/NotoSansJP-Regular.woff") format("woff");} @font-face {font-family: 'NotoSansJP';font-weight: 500;font-style: normal;font-display: swap;src: url("../fonts/NotoSansJP-Medium.woff2") format("woff2"),url("../fonts/NotoSansJP-Medium.woff") format("woff");} @font-face {font-family: 'NotoSansJP';font-weight: 700;font-style: normal;font-display: swap;src: url("../fonts/NotoSansJP-Bold.woff2") format("woff2"),url("../fonts/NotoSansJP-Bold.woff") format("woff");}
 
-$font-base: "Hiragino Sans", 'メイリオ', "Meiryo", "ＭＳ Ｐゴシック", 'MS PGothic', sans-serif;
-// $font-base: "Hiragino Sans", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",  "BIZ UDPGothic", Meiryo, sans-serif;//400,500,600
+
+
+$font-base: "NotoSansJP", sans-serif;
 $font-jp: 'Noto Serif JP', serif;//400,500,600
 $font-en: 'Cormorant Garamond', serif;//400,500
 $font-DinB: 'DIN Condensed Bold';
