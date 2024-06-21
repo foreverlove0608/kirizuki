@@ -2537,6 +2537,23 @@ Footer
   z-index: 10;
   top: 44%;
 }
+@media screen and (min-width: 1025px) {
+  .lp-customer__list .slick-arrow {
+    width: 46px;
+    height: 142px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1025px) and (any-hover: hover) {
+  .lp-customer__list .slick-arrow {
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .lp-customer__list .slick-arrow:hover {
+    opacity: 0.7;
+  }
+}
 .lp-customer__list .slick-arrow:before {
   content: "";
   display: block;
@@ -2544,6 +2561,12 @@ Footer
   height: 71px;
   background: url(../img/index/arr-next.png) no-repeat center/100%;
   opacity: 1;
+}
+@media screen and (min-width: 1025px) {
+  .lp-customer__list .slick-arrow:before {
+    width: 46px;
+    height: 142px;
+  }
 }
 .lp-customer__list .slick-arrow.slick-prev {
   left: 15px;

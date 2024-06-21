@@ -366,6 +366,12 @@
 			height: 71px;
 			z-index: 10;
 			top: 44%;
+			@include mq(tb-min){
+				width: 46px;
+				height: 142px;
+				cursor: pointer;
+				@include fn-hover;
+			}
 			&:before{
 				content: "";
 				display: block;
@@ -373,6 +379,10 @@
 				height: 71px;
 				background: url(../img/index/arr-next.png) no-repeat center/100%;
 				opacity: 1;
+				@include mq(tb-min){
+					width: 46px;
+					height: 142px;
+				}
 			}
 			&.slick-prev{
 				left: 15px;

@@ -3,24 +3,27 @@
 ----------------------------------------*/
 $('.js-customer').slick({
 	infinite: true,
-	slidesToShow: 5,
+	slidesToShow: 4,
 	slidesToScroll: 1,
+	centerMode: true,
+	centerPadding: '120px',
+	autoplay: true,
 	responsive: [
 		{
-		  breakpoint: 834,
+		  breakpoint: 1200,
 		  settings: {
 			slidesToShow: 3,
 			slidesToScroll: 1,
 			infinite: true,
-			dots: true
 		  }
 		},
 		{
-		  breakpoint: 641,
-		  settings: {
-			slidesToShow: 3,
-			slidesToScroll: 1
-		  }
+			breakpoint: 835,
+			settings: {
+			  slidesToShow: 3,
+				slidesToScroll: 1,
+				centerPadding: '50px',
+			}
 		}
 	]
 });
