@@ -1,14 +1,29 @@
 /*----------------------------------------
 	Pages
 ----------------------------------------*/
-if($(window).width() < 835){
-	$('.js-customer').slick({
-		infinite: true,
-		slidesToShow: 3,
-		slidesToScroll: 1
-	});
-}
-
+$('.js-customer').slick({
+	infinite: true,
+	slidesToShow: 5,
+	slidesToScroll: 1,
+	responsive: [
+		{
+		  breakpoint: 834,
+		  settings: {
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			infinite: true,
+			dots: true
+		  }
+		},
+		{
+		  breakpoint: 641,
+		  settings: {
+			slidesToShow: 3,
+			slidesToScroll: 1
+		  }
+		}
+	]
+});
 
 var headerHeight = $('#main-header').outerHeight();
 var urlHash = location.hash;
